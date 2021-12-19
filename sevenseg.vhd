@@ -42,5 +42,5 @@ begin
               "0100001" when num="1101" else -- D
               "0000110" when num="1110" else -- E
               "0001110" when num="1111" else -- F
-              "ZZZZZZZ";
+              "ZZZZZZZ"; -- Unreachable
 end sevenseg_behavior;

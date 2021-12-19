@@ -7,5 +7,5 @@ all:
 	$(GHDL) -e $(FLAGS) sevenseg_test
 
 wave:
-	$(GHDL) -r $(FLAGS) sevenseg_test --wave=test.ghw --stop-time=1us
-	$(WAVE) test.ghw
+	$(GHDL) -r $(FLAGS) sevenseg_test --wave=sevenseg_test.ghw --stop-time=1us
+	$(WAVE) sevenseg_test.gtkw

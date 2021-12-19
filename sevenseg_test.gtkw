@@ -1,0 +1,23 @@
+[*]
+[*] GTKWave Analyzer v3.3.111 (w)1999-2020 BSI
+[*] Sun Dec 19 00:49:36 2021
+[*]
+[dumpfile] "sevenseg_test.ghw"
+[dumpfile_mtime] "Sun Dec 19 00:48:32 2021"
+[dumpfile_size] 738
+[savefile] "sevenseg_test.gtkw"
+[timestart] 0
+[size] 1600 853
+[pos] -1 -1
+*-24.691559 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] top.
+[treeopen] top.sevenseg_test.
+[sst_width] 215
+[signals_width] 166
+[sst_expanded] 1
+[sst_vpaned_height] 291
+@22
+#{top.sevenseg_test.in_signal[3:0]} top.sevenseg_test.in_signal[3] top.sevenseg_test.in_signal[2] top.sevenseg_test.in_signal[1] top.sevenseg_test.in_signal[0]
+#{top.sevenseg_test.out_segments[6:0]} top.sevenseg_test.out_segments[6] top.sevenseg_test.out_segments[5] top.sevenseg_test.out_segments[4] top.sevenseg_test.out_segments[3] top.sevenseg_test.out_segments[2] top.sevenseg_test.out_segments[1] top.sevenseg_test.out_segments[0]
+[pattern_trace] 1
+[pattern_trace] 0
