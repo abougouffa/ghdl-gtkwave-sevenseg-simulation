@@ -9,3 +9,4 @@ all:
 wave:
 	$(GHDL) -r $(FLAGS) sevenseg_test --wave=sevenseg_test.ghw --stop-time=1us
 	$(WAVE) sevenseg_test.gtkw
+

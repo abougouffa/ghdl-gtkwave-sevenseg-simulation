@@ -20,13 +20,19 @@ use ieee.numeric_std.all;
 entity sevenseg is
   port(
     num: in unsigned(3 downto 0); -- A number from 1 to F
+    rst: in std_logic; -- Reset signal
     segments: out std_logic_vector(6 downto 0)
   );
 end sevenseg;
 
 architecture sevenseg_behavior of sevenseg is
 begin
-  segments <= "1000000" when num="0000" else -- 0 <=> (A,B,C,D,E,F) = ON, (G) = OFF
+  prc: process(rst, num) 
+  begin
+  if rst = '1' then
+    segments <= "1111111";
+  else 
+    segments <= "1000000" when num="0000" else -- 0 <=> (A,B,C,D,E,F) = ON, (G) = OFF
               "1111001" when num="0001" else -- 1 <=> (B,C) = ON, (A,F,E,D,G) = OFF
               "0100100" when num="0010" else -- 2 <=> (A,B,E,D,G) = ON, (F,C) = OFF
               "0110000" when num="0011" else -- 3
@@ -43,4 +49,6 @@ begin
               "0000110" when num="1110" else -- E
               "0001110" when num="1111" else -- F
               "ZZZZZZZ"; -- Unreachable
+  end if;
+end process;
 end sevenseg_behavior;
